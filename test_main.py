@@ -1,7 +1,5 @@
 import unittest
 import json
-import xmlrunner
-
 
 class TestJSONLoaderMethods(unittest.TestCase):
     movies = []
@@ -21,6 +19,4 @@ class TestJSONLoaderMethods(unittest.TestCase):
         self.assertEqual(self.movies[0]['id'], 'tt0111161')
 
 if __name__ == '__main__':
-    #unittest.main()
-    runner = xmlrunner.XMLTestRunner(output='reports')
-    unittest.main(testRunner=runner)
+    unittest.main()
